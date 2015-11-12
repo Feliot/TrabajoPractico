@@ -92,6 +92,7 @@
 	</aside>
 	<!-- /#sidebar -->
 
+
 	<footer id="footer">
 	
 		<p>templete by <a href="http://germanmolina.tuars.com/">Molina German</a></p>
@@ -100,6 +101,21 @@
 	<!-- /#footer --> 
 	
 </div>
+		<!--<div id="RSSs">
+					<?php 
+
+					$rss = simplexml_load_file("https://espanol.yahoo.com/");
+
+					echo "<a href=".$rss->channel->link."><img src=".$rss->channel->image->url."/></a></br></br>";
+					
+					foreach ($rss->channel->item as $item) {					
+						
+						echo "<a href='".$item->link."'>".$item->title."</a></br> <br>";
+
+						echo $item->description."</br></br>";
+					}
+					?>
+		</div> -->
 <!-- /#pagewrap -->
 
 </body>
